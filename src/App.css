@@ -1,0 +1,222 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #3e9b1a, #12820e 48%, #05560d);
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+}
+
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.thelogregbutt {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+  size: 45px;
+  margin-top: 20px;
+}
+.navthing{
+  justify-content: center;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+  word-wrap:break-word;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+/* .title-white  {
+  color: black;
+} */
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:fangsong;
+}
+
+h1{
+  font-style: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+  position:relative;
+  /* font-size: 50px; */
+  letter-spacing:20px;
+  color:white;
+  text-transform:uppercase;
+  width:100%;
+  text-align:center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,white);
+    line-height:.7em;
+  outline:none;
+  animation : animate 5s linear infinite alternate-reverse;
+}
+@keyframes animate {
+  0%{
+    color:white;
+    text-shadow:none;
+  }
+  50%{
+    text-shadow: 0 0 5px white,
+      0 0 20px white,
+      0 0 40px white,
+      0 0 80px white,
+      0 0 160px white
+  }
+  100%{
+    text-shadow: 0 0 5px white,
+      0 0 20px cyan,
+      0 0 40px cyan,
+      0 0 80px cyan,
+      0 0 160px cyan
+  }
+}
+
+.home-title {
+  color: var(--color-foreground);
+  font-weight: 400;
+  height: 117px;
+  line-height: normal;
+  margin-left: -917px;
+  margin-top: 28px;
+  width: 322px;
+  
+}
+
+.home-about {
+  color: var(--color-foreground);
+  font-family: var(--font-text);
+  font-size: var(--font-size-xl2);
+  font-weight: 300;
+  height: 78px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: -855px;
+  margin-top: 20px;
+  width: 386px;
+}
+
+.loginstuff{
+  
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D);
+
+}
+
+.siranj{
+  padding-top: 50px;
+    margin-top: -40px;
+    margin-bottom: 150px;
+}
